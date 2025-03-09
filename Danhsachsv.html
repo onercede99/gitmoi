@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh sách sinh viên</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 20px;
+    }
+    .container {
+      width: 60%;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    h2 {
+      color: black;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: blue;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .footer {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Danh sách sinh viên</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>STT</th>
+      <th>Họ và Tên</th>
+      <th>Ngày sinh</th>
+      <th>Giới tính</th>
+      <th>Điểm trung bình</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nguyễn Văn Trung</td>
+      <td>04-07-1998</td>
+      <td>Nam</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Trần Thị Nhung</td>
+      <td>06-08-2003</td>
+      <td>Nữ</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Nguyễn Thái Hưng</td>
+      <td>17-02-1998</td>
+      <td>Nam</td>
+      <td>7.0</td>
+    </tr>
+
+    </tbody>
+  </table>
+  <div class="footer">Tổng số sinh viên: 3</div>
+</div>
+
+</body>
+</html>

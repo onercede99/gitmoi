@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bàn Cờ Vua</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+        td {
+            width: 50px;
+            height: 50px;
+        }
+        .black {
+            background-color: black;
+        }
+        .white {
+            background-color: white;
+        }
+        .border {
+            background-color: orange;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Bàn Cờ Vua</h2>
+<table border="1">
+    <tr>
+        <td class="border"></td>
+        <td class="border">1</td> <td class="border">2</td> <td class="border">3</td> <td class="border">4</td>
+        <td class="border">5</td> <td class="border">6</td> <td class="border">7</td> <td class="border">8</td>
+    </tr>
+
+    <!-- Tạo bàn cờ -->
+    <script>
+        const board = document.querySelector("table");
+        const letters = "ABCDEFGH";
+
+        for (let i = 0; i < 8; i++) {
+            let row = "<tr>";
+            row += `<td class="border">${letters[i]}</td>`; // Cột đánh dấu A-H
+
+            for (let j = 0; j < 8; j++) {
+                let color = (i + j) % 2 === 0 ? "white" : "black";
+                row += `<td class="${color}"></td>`;
+            }
+            row += "</tr>";
+            board.innerHTML += row;
+        }
+    </script>
+
+</table>
+
+</body>
+</html>

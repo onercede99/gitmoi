@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tính năm chẵn lẻ</title>
+</head>
+<body>
+<script>
+  var year = parseInt(prompt("Enter a year "));
+  var leyear = false;
+  var  chanyear = year % 4 == 0;
+  if (chanyear) {
+    var chanyear1 = year % 100 == 0;
+    if (chanyear1) {
+      var chanyear4 = year % 400 == 0;
+      if (chanyear4) {
+        leyear = true;
+      }
+    } else {
+      leyear = true;
+    }
+  } if (leyear) {
+    alert(year + " day la nam chan");
+  } else {
+    alert(year + " day khong phai nam chan");
+  }
+
+</script>
+</body>
+</html>
